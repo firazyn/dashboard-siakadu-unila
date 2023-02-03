@@ -19,8 +19,8 @@ include("fusioncharts/fusioncharts.php");
 <body>
 
     <section>
-        <h1>Skripsi Playgrounds</h1>
-        <h3>DB Integration and Web Page View Test</h3>
+        <h1>Dashboard Siakadu</h1>
+        <h3>Rata-rata IPK Lulusan</h3>
     </section>
 
     <section>

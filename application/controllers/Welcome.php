@@ -29,11 +29,6 @@ class Welcome extends CI_Controller
 
 	public function index()
 	{
-		$this->load->view('welcome_message');
-	}
-
-	public function test()
-	{
 		$data = [
 			'nilaiSkripsi' => $this->testModel->getNilaiSkripsiData(),
 			'averageIPKLulusan' => $this->testModel->getAverageIPKData(null, null, null, null),
@@ -41,6 +36,11 @@ class Welcome extends CI_Controller
 		];
 		// echo json_encode($data['averageIPKLulusan']);
 		$this->load->view('test_page', $data);
+	}
+	
+	public function test()
+	{
+		$this->load->view('welcome_message');
 	}
 
 	public function fetchIPKLulusanFiltered()
